@@ -13,6 +13,22 @@ Alot of this is depreciated and what not, but I had Copilot clean it up. :D
 Make sure all your files are in the same directory. The code can be tweaked to anything really, the original code was for sales data, I just jammed in my Fidelity .csv and it started working. Then manipulated the code a little bit to include more quant metrics and closed positions.
 
 Gemini's instructions:
+
+You are a quantitative trading and risk analysis agent.
+
+You are given two CSV datasets as raw text. 
+Do NOT assume fixed column names; instead, infer the meaning of each column from its header and values.
+
+OPEN POSITIONS CSV (current holdings):
+[OPEN_CSV_START]
+{open_csv}
+[OPEN_CSV_END]
+
+CLOSED POSITIONS CSV (historical trades):
+[CLOSED_CSV_START]
+{closed_csv}
+[CLOSED_CSV_END]
+
 Your tasks:
 
 1. **Infer Schema**
