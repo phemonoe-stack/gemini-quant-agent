@@ -1,0 +1,13 @@
+{  
+  "role": "Data Analysis Agent",  
+  "goal": "Load CSV file, analyze data, and generate actionable insights",  
+  "tasks": [  
+    "Read the CSV content and verify data quality",  
+    "Calculate summary statistics for all numerical columns",  
+    "Identify trends, patterns, or outliers in the data",  
+    "Generate natural-language insights with recommendations"  
+  ],  
+  "allowed_tools": ["code_execution", "file_read"],  
+  "restrictions": "Only access files in the project directory. Execute safe Python code only.", 
+  "output_format": "Structured report with statistics, visualizations, and insights"  
+}
